@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+  	<title>USA 4K TOUR TAMIL VLOGS</title>
+  	<link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+<nav> 
+    <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="home.html">Home</a></li>
+    </ul>
+    </nav>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 15</div>
+      <a href="https://www.youtube.com/watch?v=J7GPW-HYNG0" target="_blank"><img src="DykerHeights.jpg" style="width:100%"></a>
+      <div class="text">Dyker Heights</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 15</div>
+      <a href="https://www.youtube.com/watch?v=0ctu1g3d1m4" target="_blank"><img src="Halloween.jpg" style="width:100%"></a>
+      <div class="text">Halloween</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 15</div>
+      <a href="https://www.youtube.com/watch?v=McdAAqKeFMc" target="_blank"><img src="Safari.jpg" style="width:100%"></a>
+      <div class="text">Safari</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 15</div>
+      <a href="https://www.youtube.com/watch?v=blrZZ1GZRac" target="_blank"><img src="ChristmasLights.jpg" style="width:100%"></a>
+      <div class="text">Christmas Lights</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 15</div>
+      <a href="https://www.youtube.com/watch?v=6VQGaCNDm2U" target="_blank"><img src="AnimalKingdom.jpg" style="width:100%"></a>
+      <div class="text">Animal Kingdom</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 15</div>
+      <a href="https://www.youtube.com/watch?v=2YdaiizBSLc" target="_blank"><img src="Lottery.jpg" style="width:100%"></a>
+      <div class="text">Lottery</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 15</div>
+      <a href="https://www.youtube.com/watch?v=D9ooPYZ4NQM" target="_blank"><img src="PanamaCanal.jpg" style="width:100%"></a>
+      <div class="text">Panama Canal</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 15</div>
+      <a href="https://www.youtube.com/watch?v=-PECJ8jpncU" target="_blank"><img src="Highways.jpg" style="width:100%"></a>
+      <div class="text">Highways</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 15</div>
+      <a href="https://www.youtube.com/watch?v=mOqjl5nP01o&t=36s" target="_blank"><img src="Schools.jpg" style="width:100%"></a>
+      <div class="text">School Sports</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">10 / 15</div>
+      <a href="https://www.youtube.com/watch?v=8hJF3TYhdCs" target="_blank"><img src="Dubai.jpg" style="width:100%"></a>
+      <div class="Dubai Trip Experience">Dubai Trip Experience</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">11 / 15</div>
+      <a href="https://www.youtube.com/watch?v=udnh8GFQ7KA" target="_blank"><img src="Office.jpg" style="width:100%"></a>
+      <div class="text">Office Team Family Fun</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+</body>
+</html>

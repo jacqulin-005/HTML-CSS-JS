@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+  	<title>USA 4K TOUR TAMIL VLOGS</title>
+  	<link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        h1 {
+        color : #eea03a;
+        margin-left: 10%;
+        font-family:cursive;
+        }
+    </style>
+</head>
+<body>
+    
+<nav> 
+<ul>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="videos.html">Videos</a></li>
+  <li><a href="home.html">Home</a></li>
+</ul>
+</nav>
+
+<img class="img_banner" src="Banner.png">
+
+<h1>This is a dummy page for frontend design assessment</h1>
+<h1>Contact us for commercial advertising</h1>
+
+<form id="contact-form">
+    <div style="padding: 1%">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+    </div>
+    <div style="padding: 1%">
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Email address" id="email" name="email" 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+    </div>
+    <div style="padding: 1%">
+        <label for="Advertisement">Business type:</label>
+        <select name="Advertisement" id="Advertisement" style="width: 80%">
+            <option value="Commercial">Commercial</option>
+            <option value="Event Management">Event Management</option>
+            <option value="Homemade product">Homemade Product</option>
+            <option value="Tutoring">Tutoring/Education</option>
+        </select>
+
+    <div style="padding: 1%">
+        <label for="message">Message:</label>
+        <textarea placeholder="Your message" cols="75" rows="5" name="message" id="subject" required ></textarea>
+    </div>
+    <button type="submit" onclick="return validateEmail(document.getElementById('email').value)">Submit</button>
+    <!-- <script type="text/javascript" src="external.js"></script> -->  
+  </form>
+
+</body>
+</html>
